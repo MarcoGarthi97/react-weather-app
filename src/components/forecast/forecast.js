@@ -6,8 +6,6 @@ const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satu
 const Forecast = ({ data }) => {
     const dayInWeek = new Date().getDay();
     const forecastDays = WEEK_DAYS.slice(dayInWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayInWeek));
-    console.log('data')
-    console.log(data)
     return (
         <>
             <label className="title">Daily</label>
