@@ -13,8 +13,8 @@ const Search = ({onSearchChange}) => {
             return{
                 options: response.data.map((city) => {
                     return{
-                        value: city.latitude + ", " + city.longitude,
-                        label: city.name + ", " + city.countryCode
+                        value: city.latitude + " " + city.longitude,
+                        label: city.name + " " + city.countryCode
                     }
                 })
             }
